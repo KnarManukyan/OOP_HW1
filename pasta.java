@@ -1,8 +1,7 @@
 package homework;
 import java.util.Scanner;
-
 public class pasta {
-	
+
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a number!");
@@ -17,14 +16,15 @@ public class pasta {
 		System.out.println("Enter pasta names " + num + " times!");
 		int i=1;
 		while(i<=num) {
-		  String str = input.next();	 
-		 if(str.equals("Tagliatelle"))
+		  String str = input.next();
+		  str.toLowerCase().trim();
+		 if(str.equals("tagliatelle"))
 			 numt += 1;
-		 else if(str.equals("Penne")) 
+		 else if(str.equals("penne")) 
 			 nump += 1;
-		 else if(str.equals("Spagetti")) 
+		 else if(str.equals("spagetti")) 
 			 nums += 1; 
-		 if (str.equals("Tagliatelle") || str.equals("Penne") || str.equals("Spagetti"))
+		 if (str.equals("tagliatelle") || str.equals("penne") || str.equals("spagetti"))
 			 i++;
 		 else
 			System.out.println("Sorry, this type of pasta is not in my homework. Try again!"); 
